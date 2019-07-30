@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Like/dislike</title>
+    <link rel="stylesheet" href="st.css">
+    <style>
+        .feedback-module{
+            border: 1px solid black;
+            width: 860px;
+        }
+        .like-dislike{
+            margin: 0 auto;
+            width: 300px;
+        }
+        button{
+            margin: 10px;
+        }
+
+        .like-form, .dislike-form{
+            width: 700px;
+            margin: 10px auto;
+            text-align: justify;
+            display: none;
+        }
+
+        /* .like-form{
+            background-color: lightgreen;
+        } */
+
+        /* .dislike-form{
+            background-color: lightcoral;
+        } */
+
+        .block{
+             display: block;
+         }
+        .unblock{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<script>
+    (function(){
+        window.onload = function(){
+            let like = document.querySelector('.like');
+            let dislike = document.querySelector('.dislike');
+            let likeDislike = document.querySelector('.like-dislike');
+
+            like.addEventListener('click', function(event){
+                event.preventDefault();
+
+                let likeForm = document.querySelector('.like-form');
+                likeForm.classList.add('block');
+
+                likeDislike.classList.add('unblock');
+                console.log(event);
+            });
+
+            dislike.addEventListener('click', function(event){
+                event.preventDefault();
+
+                let disLikeForm = document.querySelector('.dislike-form');
+                disLikeForm.classList.add('block');
+
+                likeDislike.classList.add('unblock');
+                console.log(event);
+            });
+        };
+    })();
+</script>
+<div class="feedback-module">
+    <div class="like-dislike">
+        <button class="like button-click"><b>Нравится</b></button>
+        <button class="dislike button-click"><b>Не нравится</b></button>
+    </div>
+    <div class="like-form">
+        <h2>Отлично!</h2>
+        <p>Если у вас есть минутка, расскажите нам, что вам больше всего помогло в этой статье.</p>
+        <form name="exampleForm" class="elegant-aero" method="GET" action="form.php">
+            <div class="form-block">
+                <textarea type="text" name="userMessage" class="form-control" rows="4" ng-model="message" ng-minlength="10" ng-maxlength="100" placeholder="Напишите свой отзыв здесь..." required></textarea>
+                <div ng-messages="exampleForm.userMessage.$error">
+                    <!-- <div ng-message="required">Это поле обязательно к заполнению</div> -->
+                </div>
+            </div>
+            <div class="form-block">
+                <input type="text" name="userFirstName" class="form" ng-model="firstName"  placeholder="Имя(Обязательно)" required />
+                <div ng-messages="exampleForm.userFirstName.$error">
+                <!-- <div ng-message="required">Это поле обязательно к заполнению</div> -->
+                </div>
+                <!-- сделать чтобы почта была не обязательна -->
+                <input type="email" name="userEmail" class="form" ng-model="email" placeholder="Email" required />
+                <div ng-messages="exampleForm.userEmail.$error">
+                <!-- <div ng-message="email">Ваш адрес электронной почты недействителен</div> -->
+                </div>
+            </div>
+            <div class="button">
+                    <input class="button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+            </div>
+        </form>
+    </div>
+    <div class="dislike-form">
+            <h2>Приносим извинения. :(</h2>
+            <p>Что случилось?</p>
+        <form class="ar_form" id="ar_form_radios" action="javascript:void(0);">
+            <div class="ar_radios">
+                <label for="ratearticle_notrated_response_1" class="ar_radio_label">
+                    <input type="radio" class="ar_radio" name="ar_radio" id="ratearticle_notrated_response_1" value="ratearticle_notrated_response_1">Статья не информационная.</label>
+                <label for="ratearticle_notrated_response_2" class="ar_radio_label">
+                    <input type="radio" class="ar_radio" name="ar_radio" id="ratearticle_notrated_response_2" value="ratearticle_notrated_response_2">Статья не ответила на мой вопрос.</label>
+                <label for="ratearticle_notrated_response_3" class="ar_radio_label">
+                    <input type="radio" class="ar_radio" name="ar_radio" id="ratearticle_notrated_response_3" value="ratearticle_notrated_response_3">Это глупая тема или статья.</label>   
+            </div>
+            <input type="button" class="button" value="ОТПРАВИТЬ">
+            <!-- <div class="ar_spinner ar_submit_inactive">
+                <img src="#" alt="<ar_submitting>">   добавить гиф загрузки
+            </div> -->
+        </form>
+    </div>
+    <div class="review">
+        <p>Спасибо за отзыв!</p>
+    </div>
+</div>
+</body>
+</html>

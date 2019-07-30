@@ -1,0 +1,102 @@
+* {
+  font-family: MagistralCTT, sans-serif;
+}
+
+.like-form p {
+  margin: -10px 0;
+}
+
+.elegant-aero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.elegant-aero .form-control {
+  width: 340px;
+  height: 100px;
+  margin: 10px 20px 10px 0;
+}
+
+.elegant-aero .form {
+  margin: 10.5px 0;
+  width: 330px;
+  height: 36px;
+}
+
+.elegant-aero .form-block {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.button {
+  width: 100%;
+  height: 30px;
+  background: #d0ec99;
+  border-radius: 10px;
+  border: 2px solid #bee05c;
+}
+
+.button-click {
+  width: 120px;
+  height: 30px;
+  background: #d0ec99;
+  border-radius: 5px;
+  border: 2px solid #bee05c;
+}
+
+.dislike {
+  background: #dadada;
+  border: 2px solid #bebebe;
+}
+
+.ar_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 700px;
+  height: 180px;
+  margin: 10px auto;
+}
+
+.ar_form .ar_radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ar_form .ar_radios .ar_radio_label {
+  width: 700px;
+}
+
+.ar_form .ar_radios .ar_radio {
+  margin-right: 5px;
+}
+
+.review {
+  display: none;
+  width: 700px;
+  height: 80px;
+  padding: 40px;
+  margin: auto;
+  background: #d0ec99;
+  border: 5px solid #bee05c;
+  border-radius: 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=st.css.map */

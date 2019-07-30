@@ -1,0 +1,86 @@
+* {
+    font-family: MagistralCTT, sans-serif;
+}
+
+.like-form p {
+    margin: -10px 0;
+}
+
+.elegant-aero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 25px;
+    
+    .form-control {
+        width: 340px;
+        height: 100px;
+        margin: 10px 20px 10px 0;
+    }
+    .form {
+        margin: 10.5px 0;
+        width: 330px;
+        height: 36px;
+    }
+
+    .form-block{
+        flex-direction: row;
+    }
+}
+
+.button {
+    width:100%;
+    height: 30px;
+    background: #d0ec99;
+    border-radius: 10px;
+    border: 2px solid #bee05c;
+}
+
+.button-click {
+    width: 120px;
+    height: 30px;
+    background: #d0ec99;
+    border-radius: 5px;
+    border: 2px solid #bee05c;
+}
+
+.dislike {
+    background: #dadada;
+    border: 2px solid rgb(190, 190, 190);
+} 
+// ------------------------   ПОРАБОТАТЬ С ЦВЕТАМИ
+
+.ar_form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 180px;
+    margin: 10px auto;
+  
+    .ar_radios {
+        display: flex;
+        flex-wrap: wrap;
+
+      .ar_radio_label {
+        width: 700px;
+      }
+  
+      .ar_radio {
+        margin-right: 5px; 
+      }
+    }
+  }
+
+  .review {
+    display: none;
+    width: 700px;
+    height: 80px;
+    padding: 40px;;
+    margin: auto;
+    background: #d0ec99;
+    border: 5px solid #bee05c;
+    border-radius: 15px;
+    text-align: center;
+  } 
